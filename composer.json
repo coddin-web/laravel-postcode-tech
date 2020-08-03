@@ -1,17 +1,18 @@
 {
-    "name": "spatie/:package_name",
-    "description": ":package_description",
+    "name": "coddin-web/laravel-postcode-tech",
+    "description": "",
     "keywords": [
-        "spatie",
-        ":package_name"
+        "coddin",
+        "postcode.tech",
+        "zipcode"
     ],
-    "homepage": "https://github.com/spatie/:package_name",
+    "homepage": "https://github.com/coddin-web/laravel-postcode-tech",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": ":author_email",
-            "homepage": "https://spatie.be",
+            "name": "Falko Woudstra",
+            "email": "falko@coddin.nl",
+            "homepage": "https://coddin.nl",
             "role": "Developer"
         }
     ],
@@ -27,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Skeleton\\": "src"
+            "Coddin\\Zipcode\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Skeleton\\Tests\\": "tests"
+            "Coddin\\Zipcode\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,10 +48,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Skeleton\\SkeletonServiceProvider"
+                "Coddin\\Zipcode\\ZipcodeServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "Spatie\\Skeleton\\SkeletonFacade"
+                "Zipcode": "Coddin\\Zipcode\\ZipcodeFacade"
             }
         }
     },

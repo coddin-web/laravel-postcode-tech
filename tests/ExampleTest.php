@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Skeleton\Tests;
+namespace Coddin\Zipcode\Tests;
 
 class ExampleTest extends TestCase
 {
