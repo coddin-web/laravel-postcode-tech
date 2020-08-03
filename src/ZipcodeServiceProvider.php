@@ -23,10 +23,6 @@ class ZipcodeServiceProvider extends ServiceProvider
                     __DIR__ . '/../database/migrations/create_zipcode_table.php.stub' => database_path('migrations/' . date('Y_m_d_His', time()) . '_create_zipcode_table.php'),
                 ], 'migrations');
             }
-
-            $this->commands([
-                ZipcodeCommand::class,
-            ]);
         }
 
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'zipcode');
