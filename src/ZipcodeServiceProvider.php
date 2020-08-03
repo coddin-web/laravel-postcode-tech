@@ -2,7 +2,6 @@
 
 namespace Coddin\Zipcode;
 
-use Coddin\Zipcode\Commands\ZipcodeCommand;
 use Illuminate\Support\ServiceProvider;
 
 class ZipcodeServiceProvider extends ServiceProvider
