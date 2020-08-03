@@ -2,6 +2,7 @@
 
 namespace Coddin\Zipcode\Tests;
 
+use Coddin\Zipcode\ZipcodeFacade;
 use Coddin\Zipcode\ZipcodeServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
@@ -11,6 +12,13 @@ class TestCase extends Orchestra
     {
         return [
             ZipcodeServiceProvider::class,
+        ];
+    }
+
+    protected function getPackageAliases($app)
+    {
+        return [
+            'Zipcode' => ZipcodeFacade::class,
         ];
     }
 }

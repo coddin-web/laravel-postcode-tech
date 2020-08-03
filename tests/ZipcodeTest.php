@@ -2,16 +2,14 @@
 
 namespace Coddin\Zipcode\Tests;
 
-use Coddin\Zipcode\Zipcode;
-
 class ZipcodeTest extends TestCase
 {
     /** @test */
-    public function true_is_true()
+    public function test_full_postcode_api()
     {
         $zipcode = '7315JA';
         $number = '1';
-        $zip = Zipcode::get($zipcode, $number, true);
+        $zip = \Zipcode::get($zipcode, $number, true);
 
         $this->assertEquals($zip->postcode, $zipcode);
         $this->assertEquals($zip->number, $number);

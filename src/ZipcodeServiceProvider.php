@@ -13,6 +13,10 @@ class ZipcodeServiceProvider extends ServiceProvider
                 __DIR__.'/../config/zipcode.php' => config_path('zipcode.php'),
             ], 'config');
         }
+
+        app()->bind('zipcode', function () {
+            return new Zipcode();
+        });
     }
 
     public function register()
