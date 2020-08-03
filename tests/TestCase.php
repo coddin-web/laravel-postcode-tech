@@ -2,8 +2,8 @@
 
 namespace Coddin\Zipcode\Tests;
 
-use Orchestra\Testbench\TestCase as Orchestra;
 use Coddin\Zipcode\ZipcodeServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
